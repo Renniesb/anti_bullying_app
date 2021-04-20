@@ -1,3 +1,11 @@
 .hidden  {
     display: none
 }
+
+fieldset {
+    max-width: 50px;
+}
+
+div > button {
+    margin-top: 4px;
+}

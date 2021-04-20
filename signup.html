@@ -13,28 +13,32 @@
             <h2>Sign up</h2>
             <fieldset>
                 
-                <label for="counselorcode">Counselor Code: </label>
+                <div><label for="counselorcode">Counselor Code: </label></div>
                 <input type="text" id="counselorcode" name="counselorcode">
                 
-                <button type="submit">Submit</button>
+                <div>
+                    <button type="submit">Submit</button>
                 <button type="reset">Clear</button>
+                </div>
             </fieldset>
             
         </form>
-        <form onsubmit="addMember()" class="hidden">
+        <form onsubmit="addMember()" class="">
             <fieldset>
 
-                <label for="name">Name: </label>
+                <div><label for="name">Name: </label></div>
                 <input type="text" id="name" name="name">
 
-                <label for="counselorcode">Username: </label>
+                <div><label for="counselorcode">Username: </label></div>
                 <input type="text" id="username" name="username">
 
-                <label for="password">Password: </label>
+                <div><label for="password">Password: </label></div>
                 <input type="password" id="password" name="password">
                 
-                <button type="submit" >Submit</button>
+                <div>
+                    <button type="submit" >Submit</button>
                 <button type="reset">Clear</button>
+                </div>
             </fieldset>
         </form>
     </div>
