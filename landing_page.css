@@ -1,10 +1,16 @@
     body {
         margin: 0;
-        background-color: #32365c;
+        background-color:rgb(16, 35, 65);
     }
 
     p {
         line-height: 1.5;
+        font-size:1.1em;
+    }
+
+    .title {
+        text-align: center;
+        color:#17ccb4;
     }
 
     ul li {
