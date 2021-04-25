@@ -3,6 +3,10 @@
         background-color: #32365c;
     }
 
+    p {
+        line-height: 1.5;
+    }
+
     ul li {
         list-style-position: inside;
     }
