@@ -7,6 +7,23 @@
     <title>Anti-bullying App: Services</title>
     <link rel="stylesheet" href="services.css"></link>
 </head>
+<script>
+    let coll = document.getElementsByClassName("collapsible");
+    let i;
+    
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        let content = this.nextElementSibling;
+        console.log(content)
+        if (content.style.display === "block") {
+        content.style.display = "none";
+        } else {
+        content.style.display = "block";
+        }
+    });
+}
+</script>
 <body>
     <nav class="navbar">
             <a href="#home">Home</a>
@@ -16,7 +33,8 @@
 
     <div class="main">
         <h1>Services</h1>
-        <button type="button" class="collapsible">Ask A Question</button>
+        <button type="button" class="collapsible">Ask A Question &#9660;
+        </button>
         <div class="content">
             <iframe width="560" height="315" 
             src="https://www.youtube.com/embed/KQZ9hDDz704" 
@@ -28,17 +46,20 @@
             <button>Ask a Question here</button>
         </div>
        
-        <button type="button" class="collapsible">Create A Post</button>
+        <button type="button" class="collapsible">Create A Post &#9660;
+        </button>
             <div class="content">
                 <p>Lorem ipsum...</p>
                 <button>Create a Post here</button>
             </div>
-        <button type="button" class="collapsible">Report Bullying</button>
+        <button type="button" class="collapsible">Report Bullying &#9660;
+        </button>
             <div class="content">
                 <p>Lorem ipsum...</p>
                 <button>Report Bullying here</button>
             </div>
-        <button type="button" class="collapsible">Learn Skills</button>
+        <button type="button" class="collapsible">Learn Skills &#9660;
+        </button>
         <div class="content">
             <p>Lorem ipsum...</p>
             <button>Go to Skills section</button>
