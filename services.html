@@ -7,23 +7,7 @@
     <title>Anti-bullying App: Services</title>
     <link rel="stylesheet" href="services.css"></link>
 </head>
-<script>
-    let coll = document.getElementsByClassName("collapsible");
-    let i;
-    
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        let content = this.nextElementSibling;
-        console.log(content)
-        if (content.style.display === "block") {
-        content.style.display = "none";
-        } else {
-        content.style.display = "block";
-        }
-    });
-}
-</script>
+
 <body>
     <nav class="navbar">
             <a href="#home">Home</a>
@@ -65,7 +49,24 @@
             <button>Go to Skills section</button>
         </div>
     </div>
-
+    <script>
+        let coll = document.getElementsByClassName("collapsible");
+        let i;
+        
+        for (i = 0; i < coll.length; i++) {
+            console.log("here");
+            coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            let content = this.nextElementSibling;
+            console.log(content)
+            if (content.style.display === "block") {
+            content.style.display = "none";
+            } else {
+            content.style.display = "block";
+            }
+        });
+        }
+    </script>
 
 </body>
 </html>
